@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Lexend Peta", sans-serif;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1200px;
+}
+
+.h1 {
+  text-align: center;
+  padding: 150px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.squad {
+  top: 20%;
+}
+
+.squad1,
+.squad2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.squad2 {
+  margin-left: -35px;
+}
+
+.bruna,
+.sara,
+.pedro,
+.rodrigo,
+.lana {
+  display: block;
+  text-align: center;
+}
+
+/* ------------------------ HEADER ---------------------------------- */
+
+.logo {
+  width: 150px;
+}
+
+header {
+  padding-top: 0%;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+.navigation_header_mobile {
+  display: none;
+}
+
+.navigation_header,
+.header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header1 {
+  background-color: white;
+  height: auto;
+  justify-content: space-between;
+  padding: 0 10%;
+  background-color: orange;
+}
+
+.navigation_header {
+  gap: 3em;
+  z-index: 2;
+}
+
+.navigation_header a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.a_header:hover {
+  background-color: rgba(128, 128, 128, 0.514);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* footer */
+footer {
+  background-color: #0e293f;
+  padding-top: 60px;
+}
+
+.section-footer-pai1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ul-footer-pai1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  height: 190px;
+}
+.ul-footer-pai1 a {
+  color: #fff;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.img-logo-instagram {
+  height: 50px;
+  margin-bottom: 100px;
+}
+
+.section-footer-pai2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: #0a1d2c solid;
+  height: 70px;
+}
+.img-logo-xo {
+  height: 65px;
+}
+.ul-footer-pai2 {
+  margin-right: 400px;
+  margin-left: 50px;
+  display: flex;
+  gap: 30px;
+}
+.ul-footer-pai2 a {
+  color: #fff;
+  font-size: 15px;
+}

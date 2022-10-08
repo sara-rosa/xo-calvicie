@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xô Calvície</title>
+    <link
+      rel="shortcut icon"
+      href="./img/cabelo-curto-masculino.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <script src="./js/script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Varela+Round&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- barra de menu -->
+      <div class="header1">
+        <div class="logo">
+          <img
+            class="logo"
+            src="./imagens/logo-xocalvice.png"
+            alt="Logo Xô Calvíce"
+          />
+        </div>
+
+        <div class="navigation_header">
+          <a class="a_header" href="inicio.html">Início</a>
+          <a class="a_header" href="./index.html">Sobre Nós</a>
+          <a class="a_header" href="./produtos.html">Monte Seu Kit</a>
+          <a class="a_header" href="contato.html">Contato</a>
+        </div>
+
+        <div class="navigation_header_mobile">
+          <ul>
+            <li><a class="a-header" href="inicio.html">Início</a></li>
+            <li><a class="a-header" href="./index.html">Sobre Nós</a></li>
+            <li>
+              <a class="a-header" href="./produtos.html">Monte Seu Kit</a>
+            </li>
+            <li><a class="a-header" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="btn_mobile">
+          <ion-icon name="grid-outline"></ion-icon>
+        </div>
+      </div>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script>
+        $(document).ready(function () {
+          $(".btn_mobile").click(function () {
+            $(".navigation_header_mobile").slideToggle("slow");
+          });
+        });
+      </script>
+    </header>
+
+    <main>
+      <!-- página inicial (1)-->
+      <section class="section-pag1-pai">
+        <div class="div-pag1-pai">
+          <div class="div-pag1-filho1">
+            <h1>
+              A Maneira mais inteligente de balancear estética e autoestima
+            </h1>
+          </div>
+          <div class="div-pag1-filho2">
+            Calvície tem tratamento e aqui você consegue o de maior qualidade e
+            segurança.
+          </div>
+          <div class="div-pag1-filho3">
+            <a
+              href="https://www.youtube.com/watch?v=3tZM0PjUj68"
+              class="butao-pag1"
+            >
+              Começar Melhora!</a
+            >
+          </div>
+        </div>
+
+        <img src="./imagens/img-pag1.png" alt="" class="img-produto-pag1" />
+      </section>
+
+      <!-- página nossos produtos(2) -->
+
+      <div class="div-pag2-pai1">
+        <h1>Nossos produtos</h1>
+      </div>
+      <section class="section-pag2-pai">
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <a href="https://www.youtube.com/c/Sev7n/videos"
+                    ><img src="./imagens/minoxidil-produto.jpeg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./imagens/briotina-produto.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./imagens/shampoopower-produto.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./imagens/finasterida-produto.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./imagens/sawpalleto-produto.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./imagens/durasterida-produto.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(" .mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <!-- página antes e depois(3) -->
+      <section class="section-pag3-pai">
+        <div class="div-pag3-pai1">
+          <h1>Com a xô calvice o resultado é garantido</h1>
+        </div>
+        <div class="div-pag3-pai2">
+          <img src="./imagens/calvice-1.jpg" alt="" class="img-pag3" />
+          <img src="./imagens/calvice-2.jpg" alt="" class="img-pag3" />
+          <img src="./imagens/calvice-3.jpg" alt="" class="img-pag3" />
+        </div>
+      </section>
+
+      <!-- página de avaliação(4) -->
+      <div class="div-pag4-pai1">
+        <h1>Tenha sua vida mudada como essas pessoas</h1>
+      </div>
+      <section class="section-pag4-pai1">
+        <div class="div-pag4-filho1">
+          <div class="avaliacao-estrela">
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+          </div>
+          <div class="avaliacao-conteudo">
+            produtos de qualidade, e funciona mesmo.
+          </div>
+          <div>Geovanne R.</div>
+        </div>
+
+        <div class="div-pag4-filho1">
+          <div class="avaliacao-estrela">
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+          </div>
+          <div class="avaliacao-conteudo">
+            Tinha insegurança ao andar na rua. Vendo o resultado no espelho,
+            sinto-me mais confiante.
+          </div>
+          <div>Claudio G.</div>
+        </div>
+
+        <div class="div-pag4-filho1">
+          <div class="avaliacao-estrela">
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+          </div>
+          <div class="avaliacao-conteudo">
+            Não preciso mais usar boné ou touca para esconder o cabelo.
+          </div>
+          <div>Valdemir D.</div>
+        </div>
+
+        <div class="div-pag4-filho1">
+          <div class="avaliacao-estrela">
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+          </div>
+          <div class="avaliacao-conteudo">
+            Pensei que meu caso não tinha mais solução e a xô calvíce me salvou
+          </div>
+          <div>Rogério C.</div>
+        </div>
+
+        <div class="div-pag4-filho1">
+          <div class="avaliacao-estrela">
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+            <img
+              class="estrelinha"
+              src="./imagens/estrela-avaliacao.png"
+              alt=""
+            />
+          </div>
+          <div class="avaliacao-conteudo">
+            Voltei a me sentir bonito ao olhar ao espelho.
+          </div>
+          <div>Matheus S.</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section class="section-footer-pai1">
+        <ul class="ul-footer-pai1">
+          <a href="./index.html">Nossa história</a>
+          <a href="./equipe.html">Nossa equipe</a>
+          <a href="./produtos.html">Produtos</a>
+          <a href="./contato.html">Contate-nos</a>
+        </ul>
+
+        <a href=""
+          ><img
+            src="./imagens/instalogo-removebg-preview.png"
+            alt=""
+            class="img-logo-instagram"
+        /></a>
+      </section>
+      <section class="section-footer-pai2">
+        <ul class="ul-footer-pai2">
+          <a href="" class="">Termos de uso</a>
+          <a href="">Política de privacidade</a>
+        </ul>
+
+        <img src="./imagens/logo-xocalvice.png" alt="" class="img-logo-xo" />
+        <h4>@2022 xôcalvíce.com todos os direitos reservados</h4>
+      </section>
+    </footer>
+  </body>
+</html>

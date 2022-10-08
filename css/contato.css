@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Lexend Peta", sans-serif;
+}
+
+body {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 820px;
+}
+
+/********************************************** Início Cabeçalho ****************************************************/
+
+.logo {
+  width: 150px;
+}
+
+header {
+  padding-top: 0%;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+.navigation_header_mobile {
+  display: none;
+}
+
+.navigation_header,
+.header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header1 {
+  background-color: white;
+  height: auto;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.navigation_header {
+  gap: 3em;
+  z-index: 2;
+}
+
+.navigation_header a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.a_header:hover {
+  background-color: rgba(128, 128, 128, 0.514);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/***************************************************** Fim Cabeçalho ***************************************************************************/
+
+/****************************************************************** Início Formulário *******************************************************/
+
+.container {
+  height: auto;
+  width: auto;
+  background: #154360;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20vh;
+  position: relative;
+  border-radius: 1%;
+}
+.container .left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.left-side::before {
+  content: "";
+  position: absolute;
+  height: 77%;
+  width: 2px;
+  right: 10vh;
+  top: 50%;
+  transform: translateY(-60%);
+  background: rgb(255, 255, 255);
+}
+.left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.left-side .details i {
+  font-size: 30px;
+  color: orange;
+  margin-bottom: 10px;
+}
+.left-side,
+.details,
+.topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+.left-side .details .text-one,
+.left-side .details .text-two {
+  font-size: 14px;
+  color: white;
+}
+.left-side .details .text_one {
+  font-size: 14px;
+  color: white;
+  text-align: end;
+}
+.left-side .details .text_two {
+  font-size: 14px;
+  color: white;
+  text-align: end;
+}
+
+.container.right-side {
+  width: 50%;
+  margin-left: 75px;
+}
+.right-side,
+.topic,
+.topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+.ttext {
+  color: white;
+  font-size: 14px;
+}
+.right-side .input-box {
+  height: 50px;
+  width: 90%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #c3c9fa;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button {
+  color: orange;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  color: white;
+  background: orange;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.mapinhafofo {
+  width: 300px;
+  height: 100px;
+}
+/********************************************************* Fim Formulário ********************************************************************/
+
+/********************************************************* Footer **************************************************************************/
+footer {
+  background-color: transparent;
+  bottom: -30%;
+  height: auto;
+  width: 100%;
+  position: absolute;
+}
+section {
+  background-color: #154360;
+  bottom: 0;
+}
+.footer1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.a-footer1 {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.footer2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.a-footer2 {
+  text-decoration: none;
+  color: orange;
+  font-size: large;
+}
+.logo2 {
+  width: 50px;
+  text-align: center;
+}
+h4 {
+  font-size: medium;
+  text-align: end;
+  background-color: #154360;
+}
+
+/***************************************************** Fim do Footer ***************************************************************************/
+
+/***************************************************************responsivo*********************************************************************/
+
+@media screen and (max-width: 1403px) {
+  .a-footer1 {
+    font-size: small;
+  }
+  .a-footer2 {
+    font-size: small;
+  }
+  h4 {
+    font-size: small;
+  }
+  .left-side::before {
+    display: none;
+  }
+  header {
+    background: none;
+  }
+  .header1 {
+    box-shadow: none;
+  }
+  .logo {
+    width: 86px;
+  }
+  .navigation_header {
+    display: none;
+  }
+  .btn_mobile {
+    display: block;
+  }
+  .btn_mobile ion-icon {
+    color: orange;
+    font-size: 3rem;
+  }
+  .navigation_header_mobile {
+    display: none;
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 15px 0 rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+    background: transparent;
+    text-align: center;
+  }
+  .a-header {
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+  }
+  .a-header:hover {
+    background-color: rgba(128, 128, 128, 0.514);
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  .text-one {
+    width: 100%;
+    text-align: center;
+  }
+  .mapinhafofo {
+    width: 100%;
+  }
+  .container {
+    width: auto;
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: auto;
+    height: auto;
+    padding-top: 15vh;
+  }
+  .left-side .details .text-one,
+  .left-side .details .text-two {
+    font-size: 9px;
+  }
+  .left-side .details .text_one {
+    font-size: 8px;
+    color: white;
+    text-align: end;
+  }
+  .left-side .details .text_two {
+    font-size: 7px;
+    color: white;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 650px) {
+  .a-footer1 {
+    font-size: x-small;
+  }
+  .a-footer2 {
+    font-size: small;
+  }
+  h4 {
+    font-size: x-small;
+  }
+  main {
+    border-radius: 0;
+  }
+  .container {
+    width: auto;
+  }
+  .left-side .details .text_one {
+    font-size: 7px;
+    color: white;
+    text-align: end;
+  }
+  .left-side .details .text_two {
+    font-size: 6px;
+    color: white;
+    text-align: end;
+  }
+  .mapinhafofo {
+    width: 75%;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    background: #c3c9fa;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .a-footer1 {
+    font-size: xx-small;
+  }
+  .a-footer2 {
+    font-size: xx-small;
+  }
+  h4 {
+    font-size: small;
+  }
+}
+@media screen and (max-height: 550px) {
+  footer {
+    bottom: -50%;
+  }
+}
+@media screen and (max-height: 500px) {
+  footer {
+    bottom: -110%;
+  }
+}
+@media screen and (max-height: 400px) {
+  footer {
+    bottom: -119%;
+  }
+}
+@media screen and (max-height: 300px) {
+  footer {
+    bottom: -190%;
+  }
+}
+@media screen and (max-width: 1109px) {
+  .container {
+    width: auto;
+    padding-top: 10vh;
+  }
+}
+@media screen and (min-width: 1403px) {
+  .navigation_header_mobile ul {
+    display: none;
+  }
+  .btn_mobile ion-icon {
+    display: none;
+  }
+}
+@media screen and (min-height: 1000px) {
+  footer {
+    bottom: 0%;
+  }
+}
+@media screen and (min-height: 900px) {
+  footer {
+    bottom: 0%;
+  }
+}
+@media screen and (min-height: 800px) {
+  footer {
+    bottom: 0%;
+  }
+}
